@@ -1,0 +1,28 @@
+{% load static %}
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <title> {% block title %}BYDP Ltd{% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+
+</head>
+
+<body>  
+    <nav>
+        <!--Navigation links will go here-->
+        <a href="/">Home</a>
+        <a href="/about/">About Us</a>
+        <a href="/services/">Services</a>
+        <a href="/projects/">Our Projects</a>
+        <a href="/contact/">Contact Us</a>
+    </nav>
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>
